@@ -1,0 +1,12 @@
+# we can safely ignore all of this content
+# use the nginx buildpack
+# cf push --buildpack https://github.com/cloudfoundry-community/nginx-buildpack.git
+.git
+.gitignore
+.sass-cache
+.travis.yml
+LICENSE
+README.md
+Gruntfile.js
+package.json
+node_modules
