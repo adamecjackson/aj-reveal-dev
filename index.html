@@ -28,21 +28,36 @@
 					<h1>Slide 1</h1>
 					<h3>using HTML</h3>
 					<p> some text</p>
-					</section>
+
+					<aside class="notes">
+        		Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+    			</aside>
+				</section>
+
 				<section data-markdown>
 					<script type="text/template">
 					# Slide 2
 					#### _using markdown_
 					* 1
 					* 2
+
+						<aside class="notes">
+							This slide is about showing how one can use markdown rather than HTML
+						</aside>
 				 </script>
+
 				</section>
 				<section data-markdown>
 					<script type="text/template">
 						# Slide 3
 						### using emojis
 						:+1: - _doesn't work_ :-(
+						<aside>
+							I tried to use the emoticon markup syntax using the :[emoticode]: but it failed
+						</aside>
+
 					</script>
+
 			  </section>
 				<section data-markdown>
 					<script type="text/template">
@@ -50,11 +65,23 @@
 						### using images with markdown
 						![aws exam snap](/imgs/aws_exam.png)
 					</script>
+
+					<aside>
+						So this slide is looking at how one can embed an image using markup.
+						The only problem I can see with this is that there is no way of changing
+						the size or position of the image so may have to use HTML
+					</aside>
 			  </section>
+
 				<section>
 					<h1>Slide 5</h1>
 					<h3>using images with HTML</h3>
 					<img src="/imgs/aws_exam.png" alt="AWS Exam Pic" height="200" width="400">
+					<aside>
+						So following up from the last slide this one embeds the image using
+						standard HTML which allows me to control the size using the properties
+						of the img tag
+					</aside>
 					</section>
 			</div>
 		</div>
