@@ -7,7 +7,7 @@
 		<title>reveal.js</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/white.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -24,12 +24,38 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-				<section>Slide 3
-					<h2>TEST</h2>
+				<section>
+					<h1>Slide 1</h1>
+					<h3>using HTML</h3>
+					<p> some text</p>
+					</section>
+				<section data-markdown>
+					<script type="text/template">
+					# Slide 2
+					#### _using markdown_
+					* 1
+					* 2
+				 </script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						# Slide 3
+						### using emojis
+						:+1: - _doesn't work_ :-(
+					</script>
 			  </section>
-
+				<section data-markdown>
+					<script type="text/template">
+						# Slide 4
+						### using images with markdown
+						![aws exam snap](/imgs/aws_exam.png)
+					</script>
+			  </section>
+				<section>
+					<h1>Slide 5</h1>
+					<h3>using images with HTML</h3>
+					<img src="/imgs/aws_exam.png" alt="AWS Exam Pic" height="200" width="400">
+					</section>
 			</div>
 		</div>
 
