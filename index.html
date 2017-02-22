@@ -77,6 +77,7 @@
 						### using images with markdown and HTML
 <!--					 ![aws exam snap](/imgs/aws_exam.png){:height="50px" width="50px"} -->
 						<img src="/imgs/aws_exam.png" alt="AWS Exam Pic" height="200" width="400">
+
 						<aside class="notes">
 							So the previous slide attempted to embed an image using standard markdown
 							however there was no way of changing the size.  Therefore this slide shows
@@ -96,6 +97,7 @@
 						of the img tag
 					</aside>
 					</section>
+
 			</div>
 		</div>
 
@@ -112,7 +114,9 @@
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
 					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'socket.io/socket.io.js', async: true },
+					{ src: 'plugin/notes-server/client.js', async: true}
 				]
 			});
 		</script>
