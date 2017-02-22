@@ -1,7 +1,8 @@
 ---
 applications:
 - name: aj_revealTest
-  memory: 128M
+  memory: 64M
+  disk: 25M
   instances: 1
   host: aj_revealTest-${random-word}
   domain: apps.eu01.cf.canopy-cloud.com
